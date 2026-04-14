@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flowout</title>
+  <meta name="description" content="Flowout. Exercise on your terms. Coming soon.">
+  <link rel="canonical" href="https://flowout.fit/">
+  <meta property="og:title" content="Flowout">
+  <meta property="og:description" content="Exercise on your terms. Coming soon.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flowout.fit/">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #0a0a0a;
+      color: #f0f0f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      overflow: hidden;
+    }
+
+    .backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 40%, rgba(99, 102, 241, 0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 80% at 30% 70%, rgba(236, 72, 153, 0.05) 0%, transparent 70%);
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .logo {
+      font-size: clamp(3rem, 10vw, 6rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, #f0f0f0 0%, #a0a0a0 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tagline {
+      font-size: clamp(1.1rem, 3vw, 1.5rem);
+      font-weight: 300;
+      color: #999;
+      letter-spacing: 0.02em;
+      margin-bottom: 4rem;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #444, transparent);
+      margin: 0 auto 2rem;
+    }
+
+    .status {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #555;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 2rem;
+      z-index: 1;
+      font-size: 0.75rem;
+      color: #333;
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body>
+  <div class="backdrop"></div>
+  <main>
+    <h1 class="logo">Flowout</h1>
+    <p class="tagline">Exercise on your terms.</p>
+    <div class="divider"></div>
+    <p class="status">Coming soon</p>
+  </main>
+  <footer>&copy; 2026 Flowout</footer>
+</body>
+</html>
