@@ -45,16 +45,16 @@
 
     .hero {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
-      gap: clamp(1.5rem, 4vw, 3rem);
+      gap: clamp(0.5rem, 1.5vw, 1rem);
       margin-bottom: 4rem;
     }
 
     .logo-img {
       position: relative;
-      width: clamp(80px, 15vw, 140px);
-      height: clamp(80px, 15vw, 140px);
+      width: clamp(3rem, 10vw, 6rem);
+      height: clamp(3rem, 10vw, 6rem);
       flex-shrink: 0;
     }
 
@@ -81,6 +81,8 @@
 
     .hero-text {
       text-align: left;
+      width: max-content;
+      max-width: 100%;
     }
 
     .logo {
